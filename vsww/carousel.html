@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+        <link rel="stylesheet" href="carousel.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="carousel.js"></script>
+        
+        <style>
+            header{
+                background-image: url(image.jpg);
+                padding: 10px;
+            }
+            body{
+                background-image: none;
+            }
+            .service{
+            /*    border-style: solid;
+                border-width: 5px;
+                border-color:rgb(0, 93, 93);
+                border-radius: 0px; */
+                margin-left: -115px;
+
+                width: 125%;
+               /* margin-right: 1%; */
+                
+                
+                background-color: rgb(102, 187, 187);
+            
+                
+            }
+            .request{
+                border-style: solid;
+                border-width: 5px;
+                border-color: rgb(0, 60, 60);
+                background-color: rgb(0, 60, 60);
+                color: white;
+                margin: 30px;
+                padding: 15px;
+                text-align: center;
+                width: 80%;
+                margin-left: 60px;
+            }
+          /*  .imgdiv{
+                margin-left: 10px;
+            } */
+            .main{
+                display: flex;
+                margin: 0%;
+                padding: 0%;
+                margin-top: -18px;
+            }
+
+            .card{
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                background-color: rgb(120, 107, 107);
+                display: flex;
+            }
+            /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    margin-left: 17%;
+    
+  }
+  .container h2{
+    text-align: center;
+    color: white;
+
+  }
+  .container p{
+    
+    color: rgb(0, 0, 0);
+
+  }
+        </style>
+        <script>
+            function request(){
+                alert("Request send successfully.Within 30 minutes our team will contact you.")
+            }
+        </script>
+
+</head>
+<body>
+    <header>
+        <h1 id="auto">Automotive Services</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>&emsp;&emsp;&emsp;
+            <a href="about.html">About</a>&emsp;&emsp;&emsp;
+            <a href="carousel.html">Services</a>&emsp;&emsp;&emsp;
+          <!--   <a href="">Our Staff</a>&emsp;&emsp;&emsp; -->
+            <a href="login.html">Login</a>
+    
+        </nav>
+       
+    </header>
+    <main>
+        <img src="Web Banner-4.jpg" class="slide" alt="This is an image">
+       <!-- <img src="Web Banner-1.jpg" class="slide" alt="This is an image">
+        <img src="Web Banner-2.jpg" class="slide" alt="This is an image">
+        <img src="Web Banner-3.jpg" class="slide" alt="This is an image">
+       
+        <img src="Web Banner-5.jpg" class="slide" alt="This is an image">
+        <img src="Web Banner-6.jpg" class="slide" alt="This is an image">
+        <img src="Web Banner-7.jpg" class="slide" alt="This is an image">
+        --> 
+    </main>
+
+  <!--    <div class="button">
+        <span class="next">&#10095</span>
+        <span class="prev">&#10094</span>
+    </div>
+
+    <div class="move">
+        <button onclick="goPrev()">Prev</button>
+        <button onclick="goNext()">Next</button>
+    </div>
+    -->  
+
+    <h1 id="book">Book Your Service</h1><br>
+   <!--  <div class="set">
+    
+        <img src="Web Banner-6.jpg" alt="" width="750px">
+        <img src="Web Banner-5.jpg" alt="" width="750px">
+        <img src="Web Banner-3.jpg" alt="" width="750px">
+    
+    </div>  -->  
+    <div class="main">
+
+        <div class="imgdiv">
+            <img src="Web Banner-1.jpg" alt="This is an image" width="100%" height="350px">
+            <img src="Web Banner-2.jpg" alt="This is an image" width="100%" height="350px">
+        <!--    <img src="Web Banner-3.jpg" alt="This is an image" width="700px" height="300px"> -->  
+        </div>
+    <div class="service">
+        <div class="request">
+            <h1>Send the Request</h1>
+        </div>
+    <form action="" onsubmit="request()">
+       
+       
+       
+
+        <label for="" class="label">Address : </label><br>
+        <input type="text" class="input" id="address" required> <br><br>
+
+       
+        <label for="" class="label">Brand : </label><br>
+        <select name="cars" id="cars">
+            <option value="NA">Select your brand</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Saab">Saab</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+          </select><br>
+          <br>
+        <label for="" class="label">Model : </label><br>
+        <input type="text" class="input" id="model" required> <br><br>
+
+        <label for="" class="label">Fuel type : </label><br>
+        <select name="cars" id="cars">
+            <option value="NA">Select your fuel type</option>
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="CNG">CNG</option>
+        </select><br><br>
+
+        <label for="" class="label">Service type : </label><br>
+        <select name="cars" id="cars">
+            <option value="NA">Select your service type</option>
+            <option value="Periodic service">Periodic service</option>
+            <option value="AC service">AC service</option>
+            <option value="Wheel Care service">Wheel Care service</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select><br><br>
+
+        <label for="" class="label">Service plan : </label><br>
+        <select name="cars" id="cars">
+            <option value="NA">Select your service plan</option>
+            <option value="Basic Service">Basic Service</option>
+            <option value="Standard Service">Standard Service</option>
+            <option value="Comprehensive Service">Comprehensive Service</option>
+            
+          </select><br><br>
+        
+
+        <label for="" class="label">Additional service : </label><br>
+        <input type="text" class="input"id="additionalservice"> <br><br>
+        
+        <input type="submit" id="submit">
+    
+    </form>
+
+</div>
+
+</div>
+
+<div class="card">
+
+  <img src="Web Banner-5.jpg" alt="This is an image" width="50%">
+  <div class="container">
+    <h2>Automotive Service</h2>
+    <p>Enhance the life of your car. </p>
+  </div>
+
+</div>
+
+</body>
+</html>

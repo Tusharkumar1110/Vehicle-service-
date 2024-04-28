@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+ body{
+    background-image: url(bg-image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ nav{
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 0%;
+ }
+ nav a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 12px;
+    
+ }
+ a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+ }
+ #description{
+    color: rgb(153, 172, 179);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    margin-left: 125px;
+    padding-left: 150px;
+    margin-top: -50px;
+ }
+ #auto{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: white;
+ }
+ #vechile{
+    margin: 70px;
+    text-align: center;
+    color: white;
+ }
