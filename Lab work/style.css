@@ -1,0 +1,19 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+.card{
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    background-color: rgb(199, 214, 214);
+}
